@@ -11,7 +11,7 @@ const app = express();
 
 app.get('/test', (req,res)=>{
   res.json('test ok');
-  console.log(process.env.MONGO_URL);
+  
 });
 
 app.post('/register', (req, res) =>{
