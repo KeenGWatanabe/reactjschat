@@ -29,4 +29,4 @@ setup tailwind.config.js > point content:["./src/*.jsx"] ;
 safely delete App.css files
 }
 
-START CODING 28:31min
+START CODING 37:15min

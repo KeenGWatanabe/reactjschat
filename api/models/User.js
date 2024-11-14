@@ -5,4 +5,5 @@ const UserSchema = new mongoose.Schema({
   password: String,
 },{timestamps: ture});
 
-export const UserModel = mongoose.model('User', UserSchema);
+const UserModel = mongoose.model('User', UserSchema);
+module.exports = UserModel;
