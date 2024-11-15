@@ -12,11 +12,11 @@ const jwtSecret = process.env.JWT_SECRET;
 const app = express();
 app.use(cors({
   credentials: true,
-  origin: process.env.CLIENT_URL,
+  origin: 'http://localhost:5173',
 }));
 
 app.get('/test', (req,res)=>{
-  res.json('test ok');
+  res.send('hello from backend!');
   
 });
 
@@ -29,4 +29,6 @@ app.post('/register', async (req, res) =>{
   };
 });
 
-app.listen(4040);
+app.listen(4040, ()=>{
+  console.log('api running on localhost:4040');
+});
